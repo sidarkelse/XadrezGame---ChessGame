@@ -44,9 +44,8 @@ ChessUI. After starting the project, it will run without errors, ready to be pla
 
 ## Exemplo de Jogo / Gameplay Example
 
--Aqui está um exemplo simples de como jogar uma partida de xadrez usando o jogo implementado neste projeto:
-- Here's a simple example of playing a chess game using the implemented game in this project:
-- 
+- Aqui está um exemplo simples de como é o jogo Após Ser Executado:
+- Here's a simple example of what the game looks like after being executed:
 ![2024-04-08_18-24-55 (online-video-cutter com) (1)](https://github.com/sidarkelse/XadrezGame---ChessGame/assets/48395891/37b21734-2f36-457e-8277-d236cee4beae)
 
 
