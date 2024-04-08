@@ -1,4 +1,4 @@
-![2024-04-08_18-24-55 (online-video-cutter com)](https://github.com/sidarkelse/XadrezGame---ChessGame/assets/48395891/97646b5a-96ed-42bb-adb4-f6a7872965e3)# XadrezGame / Chess Game in C#
+# XadrezGame / Chess Game in C#
 
 ## Visão Geral / Overview
 
@@ -46,7 +46,8 @@ ChessUI. After starting the project, it will run without errors, ready to be pla
 
 -Aqui está um exemplo simples de como jogar uma partida de xadrez usando o jogo implementado neste projeto:
 - Here's a simple example of playing a chess game using the implemented game in this project:
-- ![2024-04-08_18-24-55 (online-video-cutter com)](https://github.com/sidarkelse/XadrezGame---ChessGame/assets/48395891/9673bdd8-2c0a-452d-b265-1d82883216ea)
+- 
+![2024-04-08_18-24-55 (online-video-cutter com) (1)](https://github.com/sidarkelse/XadrezGame---ChessGame/assets/48395891/37b21734-2f36-457e-8277-d236cee4beae)
 
 
 
