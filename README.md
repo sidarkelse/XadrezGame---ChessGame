@@ -13,7 +13,7 @@
 - Jogabilidade clássica de xadrez: O jogo segue as regras básicas do xadrez, onde os jogadores devem mover suas peças de acordo com as regras de movimento de cada peça, capturar peças adversárias e tentar dar xeque-mate no rei adversário.
  - Classic chess gameplay: The game follows the basic rules of chess, where players must move their pieces according to each piece's movement rules, capture opponent pieces, and try to checkmate the opponent's king.
 - Regras de xadrez básicas implementadas: O jogo inclui várias regras básicas do xadrez, como:
-  Basic chess rules implemented: The game includes various basic chess rules, such as:
+ - Basic chess rules implemented: The game includes various basic chess rules, such as:
   - **Roque (Castling)**
     - *Português:* Permite que o rei e uma das torres movam-se simultaneamente, sob certas condições.
     - *English:* Allows the king and one of the rooks to move together under certain conditions.
