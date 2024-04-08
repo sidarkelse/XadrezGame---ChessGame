@@ -1,4 +1,5 @@
 # XadrezGame / Chess Game in C#
+![image](https://github.com/sidarkelse/XadrezGame---ChessGame/assets/48395891/1eadac17-376f-4f7f-96b7-eb2eb0b91511)
 
 ## Visão Geral / Overview
 
