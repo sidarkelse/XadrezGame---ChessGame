@@ -38,4 +38,14 @@
    usando git clone https://github.com/sidarkelse/XadrezGame---ChessGame
    
    using git Clone https://github.com/sidarkelse/XadrezGame---ChessGame
+   
+2. - Abra a pasta onde Clonou o projeto e Execute o arquivo XadrezChess.Sln
+
+    Open the folder where you cloned the project and run the XadrezChess.Sln file.
+
+3.-  Assim que o seu visual Studio Abrir com o projeto, Vá até o projeto ChessUI e clique com o botão direito nele, Escolhendo a opção Set as Startup Project, Para iniciar o projeto com o ChessUI, Assim após inciar o projeto, ele está rodando normalmente sem erros, Pronto para ser jogado  ou  testado
+
+-Once your Visual Studio opens with the project, navigate to the ChessUI project and right-click on it, selecting the option Set as Startup Project, to start the project with ChessUI. After setting up the project, it will run without errors, ready to be played or tested.
+
+
 
