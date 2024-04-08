@@ -1,8 +1,5 @@
 # XadrezGame / Chess Game in C#
 
-![image](https://github.com/sidarkelse/XadrezGame---ChessGame/assets/48395891/0a447806-73c1-4a09-aab6-c3f245a45555)
-
-
 ## Visão Geral / Overview
 
 - Este é um simples jogo de xadrez implementado em C#, onde os jogadores podem desfrutar do jogo clássico de xadrez entre si.
@@ -42,10 +39,18 @@
      Open the folder where you cloned the project and run the XadrezChess.Sln file.
 
 3.  - Assim que o seu Visual Studio abrir com o projeto, navegue até o projeto ChessUI e clique com o botão direito nele. Em seguida, escolha a opção Set as Startup Project para iniciar o projeto com ChessUI. Após iniciar o projeto, ele será executado sem erros, pronto para ser jogado ou testado.
- 
-  Once your Visual Studio opens with the project, navigate to the ChessUI project and right-click on it. Then, select the option Set as Startup Project to start the project with 
-  ChessUI. After starting the project, it will run without errors, ready to be played or tested.
+Once your Visual Studio opens with the project, navigate to the ChessUI project and right-click on it. Then, select the option Set as Startup Project to start the project with 
+ChessUI. After starting the project, it will run without errors, ready to be played or tested.
+
+## Exemplo de Jogo / Gameplay Example
+
+-Aqui está um exemplo simples de como jogar uma partida de xadrez usando o jogo implementado neste projeto:
+- Here's a simple example of playing a chess game using the implemented game in this project:
+- ![image](https://github.com/sidarkelse/XadrezGame---ChessGame/assets/48395891/9492d7d7-bc3a-43eb-8461-967e865d7208)
 
 
+## Contribuindo / Contributing
+Contribuições são bem-vindas! Se encontrar algum bug ou tiver sugestões para melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+Contributions are welcome! If you find any bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
 
