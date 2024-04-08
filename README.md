@@ -42,7 +42,7 @@
 - Once your Visual Studio opens with the project, navigate to the ChessUI project and right-click on it. Then, select the option Set as Startup Project to start the project with 
 ChessUI. After starting the project, it will run without errors, ready to be played or tested.
 
-## Exemplo de Jogo / Gameplay Example
+## Exemplo de como é o jogo / Gameplay Example
 
 - Aqui está um exemplo simples de como é o jogo Após Ser Executado:
 - Here's a simple example of what the game looks like after being executed:
