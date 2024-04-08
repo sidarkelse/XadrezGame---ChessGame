@@ -49,6 +49,11 @@ ChessUI. After starting the project, it will run without errors, ready to be pla
 - ![image](https://github.com/sidarkelse/XadrezGame---ChessGame/assets/48395891/9492d7d7-bc3a-43eb-8461-967e865d7208)
 
 
+## Destaques Adicionais / Additional Highlights
+
+- **Funcionalidade de Destaque:** Ao clicar em uma peça, é exibido os possíveis movimentos que a peça pode fazer, facilitando a visualização das opções de jogadas.
+- **Highlight Feature:** When clicking on a piece, it shows the possible movements that the piece can make, making it easier to visualize the move options.
+
 ## Contribuindo / Contributing
 - Contribuições são bem-vindas! Se encontrar algum bug ou tiver sugestões para melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 - Contributions are welcome! If you find any bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
