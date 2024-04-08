@@ -30,5 +30,10 @@
     - *Português:* O jogo termina em empate quando o rei de um jogador não está em xeque, mas o jogador não tem nenhum movimento legal disponível.
     - *English:* The game ends in a draw when a player's king is not in check, but the player has no legal moves available.
 
+## Como Jogar / How to Play
 
+1. -Clone o repositório para a sua máquina local:
+   -Clone the repository to your local machine:
+   -usando git clone https://github.com/sidarkelse/XadrezGame---ChessGame
+   -using git Clone https://github.com/sidarkelse/XadrezGame---ChessGame
 
