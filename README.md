@@ -38,8 +38,7 @@
 
      Open the folder where you cloned the project and run the XadrezChess.Sln file.
 
-3.  - Assim que o seu Visual Studio abrir com o projeto, navegue até o projeto ChessUI e clique com o botão direito nele. Em seguida, escolha a opção Set as Startup Project para iniciar o projeto com ChessUI. Após iniciar o projeto, ele será executado sem erros, pronto para ser jogado ou testado.
-    
+3.  - Assim que o seu Visual Studio abrir com o projeto, navegue até o projeto ChessUI e clique com o botão direito nele. Em seguida, escolha a opção Set as Startup Project para iniciar o projeto com ChessUI. Após iniciar o projeto, ele será executado sem erros, pronto para ser jogado ou testado. 
 - Once your Visual Studio opens with the project, navigate to the ChessUI project and right-click on it. Then, select the option Set as Startup Project to start the project with 
 ChessUI. After starting the project, it will run without errors, ready to be played or tested.
 
@@ -51,7 +50,7 @@ ChessUI. After starting the project, it will run without errors, ready to be pla
 
 
 ## Contribuindo / Contributing
-Contribuições são bem-vindas! Se encontrar algum bug ou tiver sugestões para melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-Contributions are welcome! If you find any bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
+- Contribuições são bem-vindas! Se encontrar algum bug ou tiver sugestões para melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+- Contributions are welcome! If you find any bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
 
