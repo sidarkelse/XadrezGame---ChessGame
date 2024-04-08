@@ -35,5 +35,6 @@
 1. -Clone o repositório para a sua máquina local:
    -Clone the repository to your local machine:
    usando git clone https://github.com/sidarkelse/XadrezGame---ChessGame
+   
    using git Clone https://github.com/sidarkelse/XadrezGame---ChessGame
 
