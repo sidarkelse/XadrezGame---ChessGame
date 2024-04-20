@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.SignalR.Client;
+﻿using ChessLogic.Helpers;
+using Microsoft.AspNetCore.SignalR.Client;
 using System.Net;
 
 namespace ChessLogic
@@ -32,15 +33,16 @@ namespace ChessLogic
 
         public static void StartListeners()
         {
-            connection.On("OnReceiveMove", (string move) =>
+            connection.On("OnReceiveMove", (MoveData moveData) =>
             {
-                OnReceiveMove?.Invoke(MoveData.Parse(move), true);
+                Move move = Utils.GetMoveInstance(moveData);
+                OnReceiveMove?.Invoke(move, true);
             });
         }
 
         public async static Task MakeMove(Move move)
         {
-            await connection.InvokeAsync("OnMakeMove", move.ToJson());
+            await connection.InvokeAsync("OnMakeMove", move);
         }
     }
 }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ChessLogic
 {
-	public abstract partial class Move
+	public abstract class Move
 	{
 		public abstract MoveType Type { get; } //Movimentos normais
 		public abstract Position FromPos{ get; } //Retorna ao movimento inicial
@@ -26,27 +26,17 @@ namespace ChessLogic
 			return !boardCopy.IsInCheck(player);
 		}
 
-        public string ToJson()
-        {
-            return JsonConvert.SerializeObject(this);
-        }
-        public static Move Parse(string json)
-        {
-            return JsonConvert.DeserializeObject<MoveData>(json);
-        }
+        public string ToJson() => JsonConvert.SerializeObject(this);
+        public static T Parse<T>(string json) where T : Move => JsonConvert.DeserializeObject<T>(json);
     }
 
-    public class MoveData : Move
+    public class MoveData
     {
-		public MoveData() { }
+        public MoveData(){ }
+        public MoveData(Position from, Position to, MoveType type) => (FromPos, ToPos, Type) = (from, to, type);
 
-        public override MoveType Type { get; }
-        public override Position FromPos { get; }
-        public override Position ToPos { get; }
-
-        public override bool Execute(Board board)
-        {
-            return false;
-        }
+        public MoveType Type { get; set; }
+        public Position FromPos { get; set; }
+        public Position ToPos { get; set; }
     }
 }

@@ -99,7 +99,7 @@
 			}
 			if(canCastleQueenSide(from, board))
 			{
-				yield return new Castle(MoveType.CastleQs,from);
+				yield return new Castle(MoveType.CastleQs, from);
 			}
 		}
 

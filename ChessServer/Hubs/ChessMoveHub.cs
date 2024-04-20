@@ -5,7 +5,7 @@ namespace ChessServer.Hubs
 {
     public class ChessMoveHub : Hub
     {
-        public async Task OnMakeMove(string move)
+        public async Task OnMakeMove(MoveData move)
         {
             await Clients.OthersInGroup("default").SendAsync("OnReceiveMove", move);
         }

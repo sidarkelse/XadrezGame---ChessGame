@@ -244,10 +244,5 @@
 
 			return HasPawnInPosition(player, pawnPositions, skipPos);
 		}
-
-		public void Move()
-		{
-
-		}
 	}
 }
