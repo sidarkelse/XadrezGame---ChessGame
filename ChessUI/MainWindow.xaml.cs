@@ -1,9 +1,11 @@
 ﻿using ChessLogic;
+using Microsoft.AspNetCore.SignalR.Client;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
+using ChessUI.Helpers;
 namespace ChessUI
 {
 	/// <summary>
@@ -28,7 +30,13 @@ namespace ChessUI
 
 			SetCursor(gameState.CurrentPlayer);
 
-		}
+			NetworkGameState.InitializeConnectionAsync(HandleMove).ContinueWith(x => 
+			{
+				HubConnection connection = x.Result;
+				//TODO do something when connection finish
+			});
+        }
+
 		private void InitializeBoard() //Inicialização das peças no tabuleiro
 		{
 			for (int r = 0; r < 8; r++)
@@ -52,9 +60,8 @@ namespace ChessUI
 				for (int c = 0; c < 8; c++)
 				{
 					Piece piece = board[r, c];
-					PieceImages[r, c].Source = Images.GetImage(piece);
-
-				}
+					PieceImages[r, c].SetImageSource(Images.GetImage(piece));
+                }
 			}
 		}
 
@@ -123,8 +130,8 @@ namespace ChessUI
 		}
 		private void HandlePromotion(Position from, Position  to)
 		{
-			PieceImages[to.Row, to.Column].Source = Images.GetImage(gameState.CurrentPlayer, PieceType.Pawn);
-			PieceImages[from.Row, from.Column].Source = null;
+			PieceImages[to.Row, to.Column].SetImageSource(Images.GetImage(gameState.CurrentPlayer, PieceType.Pawn));
+			PieceImages[from.Row, from.Column].SetImageSource(null);
 
 			PromotionMenu promMenu = new PromotionMenu(gameState.CurrentPlayer);
 			MenuContainer.Content = promMenu;
@@ -138,10 +145,9 @@ namespace ChessUI
 			};
 		}
 
-		private void HandleMove(Move move) //diz para o jogo como executar o movimento
+		private void HandleMove(Move move, bool fromNetwork = false) //diz para o jogo como executar o movimento
 		{
-
-			gameState.MakeMove(move);
+            gameState.MakeMove(move);
 			DrawBoard(gameState.Board);
 			SetCursor(gameState.CurrentPlayer);
 
@@ -150,7 +156,13 @@ namespace ChessUI
 				ShowGameOver();
 			}
 
-
+			if (!fromNetwork)
+			{
+				NetworkGameState.MakeMove(move).ContinueWith(_ =>
+				{
+					//TODO someting when finish makemove network
+				});
+            }
 		}
 
 		private void CacheMoves(IEnumerable<Move> moves) // responsável por armazenar os movimentos válidos disponíveis para a peça selecionada
@@ -184,12 +196,12 @@ namespace ChessUI
 		{
 			if (player == Player.White)
 			{
-				Cursor = ChessCursors.WhiteCursor;
-			}
+				this.SetCursor(ChessCursors.WhiteCursor);
+
+            }
 			else
 			{
-				Cursor = ChessCursors.BalckCursor;
-
+                this.SetCursor(ChessCursors.BalckCursor);
 			}
 		}
 

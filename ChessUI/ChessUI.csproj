@@ -28,6 +28,8 @@
     <None Remove="Assets\RookW.png" />
   </ItemGroup>
 
+
+
   <ItemGroup>
     <ProjectReference Include="..\ChessLogic\ChessLogic.csproj" />
   </ItemGroup>
